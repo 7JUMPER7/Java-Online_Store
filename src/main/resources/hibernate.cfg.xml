@@ -8,12 +8,10 @@
         <property name="connection.driver_class">org.postgresql.Driver</property>
         <property name="connection.username">postgres</property>
         <property name="connection.password">admin</property>
-        <mapping class="com.arseniisemenov.onlinestore.Models.CartEntity"/>
-        <mapping class="com.arseniisemenov.onlinestore.Models.CartGoodEntity"/>
-        <mapping class="com.arseniisemenov.onlinestore.Models.MyGoodEntity"/>
-        <mapping class="com.arseniisemenov.onlinestore.Models.ImageEntity"/>
-        <mapping class="com.arseniisemenov.onlinestore.Models.OrderEntity"/>
-        <mapping class="com.arseniisemenov.onlinestore.Models.UserEntity"/>
+        <property name="show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
